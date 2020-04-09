@@ -16,6 +16,21 @@ switch (request) {
 
     break;
 
+  case "spotify-this-song":
+    getSong(item);
+
+    break;
+
+  case "movie-this":
+    getMovie(item);
+
+    break;
+
+  case "do-what-it-says":
+    getWhatItSays(item);
+
+    break;
+
   default:
     break;
 }
@@ -40,3 +55,24 @@ function getArtist(artist) {
       console.log(error);
     });
 }
+
+function getSong(song) {}
+
+function getMovie(movie) {
+  axios
+    .get(
+      "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=d0614c94"
+    )
+    .then(function (response) {
+      console.log("Title: " + response.data.Title);
+      console.log("Year: " + response.data.Year);
+      console.log("IMDB Rating: " + response.data.imdbRating);
+      console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
+      console.log("Country: " + response.data.Country);
+      console.log("Language: " + response.data.Language);
+      console.log("Plot: " + response.data.Plot);
+      console.log("Actors: " + response.data.Actors);
+    });
+}
+
+function getWhatItSays(says) {}
