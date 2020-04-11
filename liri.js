@@ -77,6 +77,9 @@ function getSong(song) {
 }
 
 function getMovie(movie) {
+  if (movie === "") {
+    movie = "Mr. Nobody";
+  }
   axios
     .get(
       "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=d0614c94"
@@ -93,6 +96,17 @@ function getMovie(movie) {
     });
 }
 
-function getWhatItSays(says) {}
+function getWhatItSays() {
+  fs.readFile("random.txt", "utf8", function (error, data) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log(data);
+
+      var randomInfo = data.split(",");
+      runLiri(randomInfo[0], randomInfo[1]);
+    }
+  });
+}
 
 runLiri(request, itemSearch);
