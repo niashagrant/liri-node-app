@@ -6,15 +6,17 @@ This app makes calls to the:
 
 - Node-Spotify-API
 - Axios
-  - You'll use Axios to grab data from the OMDB API and the Bands In Town API
+  - Axios was used to grab data from the OMDB API and the Bands In Town API
 - Moment
 - DotEnv
 
 When runing this app in you command line, you may use the following to find your desired data:
 
-- "spotify-this-song"
-- "concert-this"
-- "movie-this"
-- "do-what-it-says".
+    - "spotify-this-song"
+    - "concert-this"
+    - "movie-this"
+    - "do-what-it-says".
 
-There is a file name Screenshots that you can view how the app looks when it is workink.
+There is a file named <b> Liri Bot Screen Shots </b> that you can view how the app looks when it is working.
+
+- https://github.com/niashagrant/liri-node-app/tree/master/Liri%20Bot%20Screen%20Shots
