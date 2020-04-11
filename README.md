@@ -17,6 +17,6 @@ When runing this app in you command line, you may use the following to find your
     - "movie-this"
     - "do-what-it-says".
 
-There is a file named <b> Liri Bot Screen Shots </b> that you can view how the app looks when it is working.
+Link below will take you to the <b> Liri Bot Screen Shots </b> folder that shows how the app looks when it is working:
 
 - https://github.com/niashagrant/liri-node-app/tree/master/Liri%20Bot%20Screen%20Shots
